@@ -13,6 +13,9 @@ public class Menu {
         switch (gameMode) {
             case 1:
                 System.out.println("Вы выбрали режим игры Игрок против Игрока ");
+                char[][] fieldOf1Player = new char[10][10];
+                Player player = new Player();
+                player.field(fieldOf1Player);
                 break;
             case 2:
                 System.out.println("Вы выбрали режим игры Игрок против Компьютера");
