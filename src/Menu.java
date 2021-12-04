@@ -4,7 +4,7 @@ public class Menu {
     static Scanner sc = new Scanner(System.in);
     int gameMode;
 
-    public void startMenu() {
+    public static void startMenu() {
 
 
         System.out.println("Введите один из режимов игры:\n1.(Игрок против Игрока)\n2.(Игрок против Компьютера)\n3.(Компьютер против Компьютера) ");
@@ -40,6 +40,7 @@ public class Menu {
             }
             if (choiceOfExit == 2) {
                 System.out.println("Спасибо, что вы с нами!");
+                startMenu();
             }
         }
         return gameMode;
