@@ -7,7 +7,7 @@ public class Menu {
     public void startMenu() {
 
 
-        System.out.println("Введите один из режимов игры:1.(Игрок против Игрока), 2.(Игрок против Компьютера), 3.(Компьютер против Компьютера) ");
+        System.out.println("Введите один из режимов игры:\n1.(Игрок против Игрока)\n2.(Игрок против Компьютера)\n3.(Компьютер против Компьютера) ");
         System.out.println("Если вы хотите выйти, выберите 4");
         int gameMode = sc.nextInt();
         switch (gameMode) {
@@ -36,7 +36,7 @@ public class Menu {
             choiceOfExit = sc.nextInt();
             if (choiceOfExit == 1) {
                 System.out.println("Выходим!");
-                return 0;
+                System.exit(0);
             }
             if (choiceOfExit == 2) {
                 System.out.println("Спасибо, что вы с нами!");
